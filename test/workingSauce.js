@@ -4,8 +4,8 @@ const assert = require('assert');
 const utils = require('./utils')
 //require("dotenv").config();
 
-const SAUCE_USERNAME = 'josuemajano';
-const SAUCE_ACCESS_KEY = 'd7347f55-2b0c-4462-8ed6-5e4b14214fd9';
+const SAUCE_USERNAME = process.env.SAUCE_USERNAME; 
+const SAUCE_ACCESS_KEY = process.env.SAUCE_ACCESS_KEY;
 const ONDEMAND_URL = `https://${SAUCE_USERNAME}:${SAUCE_ACCESS_KEY}@ondemand.saucelabs.com:443/wd/hub`;
 // NOTE: Use the URL below if using our EU datacenter (e.g. logged in to app.eu-central-1.saucelabs.com)
 // const ONDEMAND_URL = `https://${SAUCE_USERNAME}:${SAUCE_ACCESS_KEY}@ondemand.eu-central-1.saucelabs.com:443/wd/hub`;
