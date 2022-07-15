@@ -1,7 +1,7 @@
 const {Builder, By, Key, until} = require('selenium-webdriver')
 const utils = require('./utils')
 
-const SAUCE_USERNAME = 'josuemajano';
+const SAUCE_USERNAME = 'josuemajano'; 
 const SAUCE_ACCESS_KEY = "d7347f55-2b0c-4462-8ed6-5e4b14214fd9";
 const ONDEMAND_URL = `https://${SAUCE_USERNAME}:${SAUCE_ACCESS_KEY}@ondemand.us-west-1.saucelabs.com:443/wd/hub`;
 // NOTE: Use the URL below if using our EU datacenter (e.g. logged in to app.eu-central-1.saucelabs.com)
